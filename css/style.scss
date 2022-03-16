@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+$blue: #0798F2;
+$lightblue: #07B0F2;
+$green: #6FA677;
+$yellow: #F2D338;
+$lightgray: #EBF2F2;
+$white: #FAFAFA;
+$font: 'Montserrat', Arial, Helvetica, sans-serif;
+$blueGradient: linear-gradient(87.12deg, #0798F2 2.63%, #2BC3FF 100%);
+
+@import 'home';
+@import 'header';
+@import 'services';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: $font;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--white);
+    height: 100vh;
+    font-family: var(--font);
+}
+
+main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('../images/home_bg.jpg');
+  background-size: cover;
+  background-position: left bottom;
+  height: 100vh;
+}
+
+/* CONFIG SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #bdbdbd;
+  }

@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+    color: #fff;
+
+    nav {
+        a {
+            color: $white;
+            margin-left: 40px;
+            font-size: 1.1rem;
+
+            i {
+                background: linear-gradient(45deg, #25D366, #37f17c);
+                padding: 10px 12px;
+                border-radius: 5px;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
