@@ -1,0 +1,47 @@
+footer {
+    padding: 60px 120px 0;
+    border-top: 2px solid #00000015;
+    background: $lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-items {
+        display: flex;
+        justify-content: space-between;
+        gap: 75px;
+
+        h3 {
+            font-size: 1.7rem;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            padding: 15px 0;
+        }
+
+        a {
+            font-size: 2.5rem;
+            color: #000000;
+        }
+
+    }
+
+    span {
+        margin: 30px 0;
+        width: 100%;
+        height: 2px;
+        background: #00000015;
+    }
+
+    .footer-copy {
+        padding-bottom: 30px;
+
+        .focus-effect {
+            color: $lightblue;
+            text-decoration: underline;
+        }
+    }
+}

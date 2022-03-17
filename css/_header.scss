@@ -3,21 +3,65 @@ header {
     z-index: 999;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 120px;
+    padding: 25px 120px;
     color: #fff;
 
     nav {
+        display: flex;
+        align-items: center;
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
         a {
-            color: $white;
             margin-left: 40px;
-            font-size: 1.1rem;
+            color: $white;
+
+            div {
+                position: relative;
+                overflow: hidden;
+                font-size: 1.1rem;
+                padding-bottom: 10px;
+
+                .line {
+                    position: absolute;
+                    display: block;
+                    bottom: 0;
+                    right: -100%;
+                    width: 100%;
+                    height: 3px;
+                    background: $lightblue;
+                }
+
+                &:hover .line {
+                    animation: line-anim 0.5s linear forwards;
+                }
+            }
 
             i {
                 background: linear-gradient(45deg, #25D366, #37f17c);
                 padding: 10px 12px;
                 border-radius: 5px;
                 font-size: 1.4rem;
+                transition: all .3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
         }
+
+    }
+}
+
+@keyframes line-anim {
+    0% {
+      right: -100%;
+    }
+    50%,
+    100% {
+      right: 0%;
     }
 }
