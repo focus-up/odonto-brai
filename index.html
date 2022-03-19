@@ -14,7 +14,166 @@
     <title>| Odonto Brati</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+
+    <main>
+        <header>
+            <h1>OdontoBrai</h1>
+            <nav id="navbar">
+                <button class="btnMobile" id="btnMobile" onclick="menu()">
+                    <span class="btnMobile-icon"></span>
+                </button>
+                <div class="menu">
+                    <a href="#services">
+                        <div>Serviços<span class="line"></span></div>
+                    </a>
+                    <a href="#about">
+                        <div>Quem Somos?<span class="line"></span></div>
+                    </a>
+                    <a href="#contact">
+                        <div>Contate-nos<span class="line"></span></div>
+                    </a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </nav>
+        </header>
+
+        <section class="home">
+            <div class="title">
+                <p>Olá, somos a</p>
+                <span></span>
+                <h1>ODONTO BRAI</h1>
+                <span></span>
+            </div>
+            <a href="#about">Saiba mais</a>
+        </section>
+
+        <section class="services" id="services">
+            <div class="cards anim-initial">
+                <div class="card yellow-card">
+                    <i class="fas fa-tooth"></i>
+                    <h2>Título 01</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque error ab fuga autem voluptatum labore pariatur alias, est magnam praesentium eum eaque voluptate aperiam similique repellat distinctio</p>
+                </div>
+                <div class="card lightBlue-card">
+                    <i class="fas fa-tooth"></i>
+                    <h2>Título 01</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque error ab fuga autem voluptatum labore pariatur alias, est magnam praesentium eum eaque voluptate aperiam similique repellat distinctio</p>
+                </div>
+                <div class="card green-card">
+                    <i class="fas fa-tooth"></i>
+                    <h2>Título 01</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque error ab fuga autem voluptatum labore pariatur alias, est magnam praesentium eum eaque voluptate aperiam similique repellat distinctio</p>
+                </div>
+                <div class="card yellow-card">
+                    <i class="fas fa-tooth"></i>
+                    <h2>Título 01</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque error ab fuga autem voluptatum labore pariatur alias, est magnam praesentium eum eaque voluptate aperiam similique repellat distinctio</p>
+                </div>
+                <div class="card lightBlue-card">
+                    <i class="fas fa-tooth"></i>
+                    <h2>Título 01</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque error ab fuga autem voluptatum labore pariatur alias, est magnam praesentium eum eaque voluptate aperiam similique repellat distinctio</p>
+                </div>
+                <div class="card green-card">
+                    <i class="fas fa-tooth"></i>
+                    <h2>Título 01</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque error ab fuga autem voluptatum labore pariatur alias, est magnam praesentium eum eaque voluptate aperiam similique repellat distinctio</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="main-title reveal">
+                <h2>Quem somos?</h2>
+                <span></span>
+            </div>
+            <div class="about-container reveal">
+                <div class="about-slider">
+                    <div class="slider-container">
+                        <div class="menu">
+                          <label for="slide-dot-1"></label>
+                          <label for="slide-dot-2"></label>
+                          <label for="slide-dot-3"></label>
+                        </div>
+                        <input id="slide-dot-1" type="radio" name="slides" checked>
+                        <div class="slide slide-1"></div>
+                        <input id="slide-dot-2" type="radio" name="slides">
+                        <div class="slide slide-2"></div>
+                        <input id="slide-dot-3" type="radio" name="slides">
+                        <div class="slide slide-3"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>OdontoBrai</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime alias ullam soluta, repellat sequi sed perspiciatis ut ea ducimus tenetur vel odit repellendus,</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta, officiis odio fugit quaerat incidunt dolore tempora eum, laborum id modi adipisci obcaecati</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="main-title reveal">
+                <h2>Contate-nos</h2>
+                <span></span>
+            </div>
+            <form class="reveal">
+                <label for="inputName">Nome</label>
+                <input type="text" id="inputName" required>
+                <label for="inputEmail">Email</label>
+                <input type="email" id="inputEmail" required>
+                <label for="inputMessage">Mensagem</label>
+                <textarea id="inputMessage" style="resize: none" cols="30" rows="10"></textarea>
+                <button type="button" class="btnEnviar">Enviar</button>
+            </form>
+        </section>
+
+        <footer class="reveal">
+            <div class="footer-items">
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><strong>Telefone:</strong> (46) 91231-1234</p>
+                    <p><strong>Email:</strong> odontobrai@gmail.com</p>
+                </div>
+                <div class="footer-address">
+                    <h3>Endereço</h3>
+                    <p>R. Xingu, 999 - Amadori Pato Branco - PR</p>
+                    <p><strong>CEP:</strong> 85921-062</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Social</h3>
+                    <a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-whatsapp-square"></i>
+                    </a>
+                </div>
+            </div>
+            <span></span>
+            <div class="footer-copy">
+                <p>&copy; Copyright 2022 - Todos os direitos reservados. Desenvolvido por <a href="#" target="_blank" class="focus-effect">FocusUp</a></p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        var $doc = $("html, body");
+        $("a").click(function () {
+        $doc.animate(
+            {
+            scrollTop: $($.attr(this, "href")).offset().top,
+            },
+            500
+        );
+        return false;
+        });
+    </script>
     
     <!-- LOCAL JS -->
     <script src="js/script.js"></script>
