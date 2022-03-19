@@ -18,17 +18,22 @@
     <main>
         <header>
             <h1>OdontoBrai</h1>
-            <nav>
-                <a href="#">
-                    <div>Serviços<span class="line"></span></div>
-                </a>
-                <a href="#">
-                    <div>Quem Somos?<span class="line"></span></div>
-                </a>
-                <a href="#">
-                    <div>Contate-nos<span class="line"></span></div>
-                </a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <nav id="navbar">
+                <button class="btnMobile" id="btnMobile" onclick="menu()">
+                    <span class="btnMobile-icon"></span>
+                </button>
+                <div class="menu">
+                    <a href="#services">
+                        <div>Serviços<span class="line"></span></div>
+                    </a>
+                    <a href="#about">
+                        <div>Quem Somos?<span class="line"></span></div>
+                    </a>
+                    <a href="#contact">
+                        <div>Contate-nos<span class="line"></span></div>
+                    </a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </nav>
         </header>
 
@@ -39,11 +44,11 @@
                 <h1>ODONTO BRAI</h1>
                 <span></span>
             </div>
-            <a href="#">Saiba mais</a>
+            <a href="#about">Saiba mais</a>
         </section>
 
-        <section class="services">
-            <div class="cards">
+        <section class="services" id="services">
+            <div class="cards anim-initial">
                 <div class="card yellow-card">
                     <i class="fas fa-tooth"></i>
                     <h2>Título 01</h2>
@@ -77,12 +82,12 @@
             </div>
         </section>
 
-        <section class="about">
-            <div class="main-title">
+        <section class="about" id="about">
+            <div class="main-title reveal">
                 <h2>Quem somos?</h2>
                 <span></span>
             </div>
-            <div class="about-container">
+            <div class="about-container reveal">
                 <div class="about-slider">
                     <div class="slider-container">
                         <div class="menu">
@@ -107,22 +112,23 @@
             </div>
         </section>
 
-        <section class="contact">
-            <div class="main-title">
+        <section class="contact" id="contact">
+            <div class="main-title reveal">
                 <h2>Contate-nos</h2>
                 <span></span>
             </div>
-            <form>
+            <form class="reveal">
                 <label for="inputName">Nome</label>
                 <input type="text" id="inputName" required>
                 <label for="inputEmail">Email</label>
                 <input type="email" id="inputEmail" required>
                 <label for="inputMessage">Mensagem</label>
                 <textarea id="inputMessage" style="resize: none" cols="30" rows="10"></textarea>
+                <button type="button" class="btnEnviar">Enviar</button>
             </form>
         </section>
 
-        <footer>
+        <footer class="reveal">
             <div class="footer-items">
                 <div class="footer-contact">
                     <h3>Contato</h3>
@@ -153,6 +159,21 @@
             </div>
         </footer>
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        var $doc = $("html, body");
+        $("a").click(function () {
+        $doc.animate(
+            {
+            scrollTop: $($.attr(this, "href")).offset().top,
+            },
+            500
+        );
+        return false;
+        });
+    </script>
     
     <!-- LOCAL JS -->
     <script src="js/script.js"></script>

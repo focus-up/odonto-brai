@@ -12,22 +12,25 @@
 }
 
 .lightBlue-card {
-    @include card-color($lightblue)
+    @include card-color($lightblue);
 }
 
 .green-card {
-    @include card-color($green)
+    @include card-color($green);
 }
 
 .services {
     background: $white;
-    margin-top: 65px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 65px auto;
 
     .cards {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
-        padding: 0 120px;
+        gap: 50px;
+        // animation: anim-initial-top .8s forwards ease-in-out;
 
         .card {
             background: $white;
@@ -35,7 +38,7 @@
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
             padding: 20px 25px;
             border-radius: 5px;
-            margin: -60px 0 100px 0;
+            margin: -60px 0 50px 0;
             transition: all .3s ease;
 
             &:hover {
@@ -43,18 +46,19 @@
             }
 
             i {
-                font-size: 2.5rem;
+                font-size: 4rem;
                 padding-bottom: 12px;
             }
 
             h2 {
+                font-size: 1.8rem;
                 font-weight: 500;
             }
 
             p {
                 padding: 12px 0;
-                font-size: 0.8rem;
-                line-height: 17px;
+                font-size: 1.2rem;
+                line-height: 1.8rem;
             }
         }
     }

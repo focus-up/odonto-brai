@@ -1,15 +1,16 @@
 .contact {
     background: $white;
-    padding: 100px 120px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 120px auto;
 
     form {
         display: flex;
         flex-direction: column;
-        margin: auto;
-        width: 100%;
-        margin-top: 85px;
-        padding: 30px 50px;
-        max-width: 800px;
+        margin: 85px auto;
+        padding: 30px 40px;
+        width: 90%;
+        max-width: 837px;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
         border-top: 9px solid $lightblue;
         border-radius: 5px;
@@ -17,6 +18,7 @@
 
         label {
             font-weight: 500;
+            font-size: 1.6rem;
 
             &:after {
                 content: '*';
@@ -36,6 +38,26 @@
 
             &:focus {
                 border: 1px solid #a3a3a3;
+            }
+        }
+
+        .btnEnviar {
+            cursor: pointer;
+            background: linear-gradient(-45deg, #0798f2, #2bc3ff, #0798f2, #2bc3ff);
+            max-width: 150px;
+            border: none;
+            background-size: 400% 400%;
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.6rem;
+            color: $white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px #c5c5c5bd;
+            animation: anim-button 4s 0.5s ease infinite alternate;
+
+            &:active {
+                box-shadow: none;
             }
         }
     }

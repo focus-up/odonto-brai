@@ -13,12 +13,12 @@
 
         p {
             text-align: center;
-            font-size: 2rem;
+            font-size: 3.2rem;
             margin-bottom: 5px;
         }
 
         h1 {
-            font-size: 6rem;
+            font-size: 9rem;
         }
 
         span {
@@ -31,16 +31,112 @@
     }
 
     a {
-        background: $blueGradient;
+        background: linear-gradient(-45deg, #0798f2, #2bc3ff, #0798f2, #2bc3ff);
+        background-size: 400% 400%;
         margin-top: 15px;
-        padding: 13px 30px;
+        padding: 10px 30px;
         border-radius: 5px;
-        font-size: 1.4rem;
+        font-size: 2rem;
         color: $white;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
+        animation: anim-button 4s 0.5s ease infinite alternate;
 
         &:hover {
             transform: translateY(10px);
+        }
+    }
+}
+
+@keyframes anim-button {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .home {
+        .title {
+            p {
+                font-size: 2.4rem;
+                margin-bottom: 5px;
+            }
+
+            h1 {
+                font-size: 8rem;
+            }
+
+        }
+
+        a {
+            font-size: 1.9rem;
+        }
+    }
+}
+
+
+
+@media (max-width: 670px) {
+    .home {
+        .title {
+            p {
+                font-size: 2.2rem;
+                margin-bottom: 5px;
+            }
+
+            h1 {
+                font-size: 6.3rem;
+            }
+
+        }
+
+        a {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .home {
+        .title {
+            p {
+                font-size: 2rem;
+                margin-bottom: 5px;
+            }
+
+            h1 {
+                font-size: 5.3rem;
+            }
+
+        }
+
+        a {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .home {
+        .title {
+            p {
+                font-size: 1.8rem;
+                margin-bottom: 5px;
+            }
+
+            h1 {
+                font-size: 4.5rem;
+            }
+
+        }
+
+        a {
+            font-size: 1.4rem;
         }
     }
 }

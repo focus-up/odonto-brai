@@ -1,28 +1,32 @@
 header {
     display: flex;
-    z-index: 999;
+    z-index: 10;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 120px;
+    width: 100%;
+    max-width: 1100px;
+    padding: 25px 20px;
+    margin: auto;
     color: #fff;
 
-    nav {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    nav .menu {
         display: flex;
         align-items: center;
-
-        div {
-            display: flex;
-            flex-direction: column;
-        }
 
         a {
             margin-left: 40px;
             color: $white;
 
             div {
+                display: flex;
+                flex-direction: column;
                 position: relative;
                 overflow: hidden;
-                font-size: 1.1rem;
+                font-size: 1.8rem;
                 padding-bottom: 10px;
 
                 .line {
@@ -36,7 +40,11 @@ header {
                 }
 
                 &:hover .line {
-                    animation: line-anim 0.5s linear forwards;
+                    animation: line-anim .5s linear forwards;
+                }
+
+                &:not(:hover) .line {
+                    animation: backLine-anim .3s linear forwards;
                 }
             }
 
@@ -44,7 +52,7 @@ header {
                 background: linear-gradient(45deg, #25D366, #37f17c);
                 padding: 10px 12px;
                 border-radius: 5px;
-                font-size: 1.4rem;
+                font-size: 2.2rem;
                 transition: all .3s;
 
                 &:hover {
@@ -63,5 +71,15 @@ header {
     50%,
     100% {
       right: 0%;
+    }
+}
+
+@keyframes backLine-anim {
+    0% {
+      right: 0;
+    }
+    50%,
+    100% {
+      right: -100%;
     }
 }
