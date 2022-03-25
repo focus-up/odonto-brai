@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>| Odonto Brati</title>
+</head>
+<body>
+
+    <main>
+        <header>
+            <h1>OdontoBrai</h1>
+            <nav id="navbar">
+                <button class="btnMobile" id="btnMobile" onclick="menu()">
+                    <span class="btnMobile-icon"></span>
+                </button>
+                <div class="menu">
+                    <a href="#services">
+                        <div>Serviços<span class="line"></span></div>
+                    </a>
+                    <a href="#about">
+                        <div>Quem Somos?<span class="line"></span></div>
+                    </a>
+                    <a href="#contact">
+                        <div>Contate-nos<span class="line"></span></div>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=554691201020" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </nav>
+        </header>
+
+        <section class="home">
+            <div class="title">
+                <p>Olá, somos a</p>
+                <span></span>
+                <h1>ODONTO BRAI</h1>
+                <span></span>
+            </div>
+            <a href="#about">Saiba mais</a>
+        </section>
+
+        <section class="services" id="services">
+            <div class="cards anim-initial">
+                <div class="card yellow-card">
+                    <!-- <i class="fas fa-tooth"></i> -->
+                    <img src="images/implante.svg" alt="imagem implante">
+                    <h2>Implante</h2>
+                    <p>A implantodontia é a especialidade odontológica que reabilita a saúde bucal quando há perda de um ou mais dentes. Os implantes são cilindros metálicos (titânio) que, ao serem instalados nos ossos maxilares, substituem as raízes de dentes ausentes</p>
+                </div>
+                <div class="card lightBlue-card">
+                    <img src="images/protese.svg" alt="imagem prótese">
+                    <h2>Prótese</h2>
+                    <p>A especialidade de prótese dentária é responsável por reestruturar os tecidos bucais e dentes perdidos, seja por acidentes ou doenças periodontais, por peças artificiais (fixas ou removíveis)</p>
+                </div>
+                <div class="card blue-card">
+                    <img src="images/denteCanal.svg" alt="">
+                    <h2>Tratamento de Canal</h2>
+                    <p>O tratamento de canal, ou simplesmente canal dentário, é um procedimento que consiste na retirada da polpa do dente, um tecido encontrado na parte interna da raiz. Geralmente, ele é indicado quando existe um cárie em processo avançado e que já causou danos na polpa dentária</p>
+                </div>
+                <div class="card green-card">
+                    <img src="images/dente.svg" alt="imagem dente">
+                    <h2>Ortodontia</h2>
+                    <p>A principal função do tratamento ortodôndico é restabelecer a oclusão dentária (perfeito engrenamento dos dentes superiores com os inferiores), que é fundamental para a correta mastigação e, consequentemente, a adequada nutrição e saúde bucal</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="main-title reveal">
+                <h2>Quem somos?</h2>
+                <span></span>
+            </div>
+            <div class="about-container reveal">
+                <div class="about-slider">
+                    <div class="slider-container">
+                        <div class="menu">
+                          <label for="slide-dot-1"></label>
+                          <label for="slide-dot-2"></label>
+                          <label for="slide-dot-3"></label>
+                        </div>
+                        <input id="slide-dot-1" type="radio" name="slides" checked>
+                        <div class="slide slide-1"></div>
+                        <input id="slide-dot-2" type="radio" name="slides">
+                        <div class="slide slide-2"></div>
+                        <input id="slide-dot-3" type="radio" name="slides">
+                        <div class="slide slide-3"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>OdontoBrai</h3>
+                    <p>A OdontoBrai é uma clínica odontologica especializada em implantes, próteses e ortodontia e hoje, atua em Pato Branco - PR. </p>
+
+                    <p>Nosso Cirurgião Dentista, Dr. Brai Braidotti, é pós graduando em implantodontia e prótese dentária, além de possuir muita experiência no ramo.</p>
+                </div>
+            </div>
+            <aside class="time reveal">
+                <div class="time-content">
+                    <h2>Horário de Atendimento</h2>
+                    <div class="days">
+                        <div>
+                            <h3>Segunda:</h3>
+                            <span></span>
+                            <p>09h00 às 12h00</p>
+                            <p>14h00 às 20h00</p>
+                        </div>
+                        <div>
+                            <h3>Terça:</h3>
+                            <span></span>
+                            <p>09h00 às 12h00</p>
+                            <p>14h00 às 20h00</p>
+                        </div>
+                        <div>
+                            <h3>Quarta:</h3>
+                            <span></span>
+                            <p>09h00 às 12h00</p>
+                            <p>14h00 às 20h00</p>
+                        </div>
+                        <div>
+                            <h3>Quinta:</h3>
+                            <span></span>
+                            <p>09h00 às 12h00</p>
+                            <p>14h00 às 20h00</p>
+                        </div>
+                        <div>
+                            <h3>Sexta:</h3>
+                            <span></span>
+                            <p>09h00 às 12h00</p>
+                            <p>14h00 às 20h00</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+
+        <section class="contact" id="contact">
+            <div class="main-title reveal">
+                <h2>Contate-nos</h2>
+                <span></span>
+            </div>
+            <form class="reveal" action="/">
+                <label for="inputName">Nome</label>
+                <input type="text" id="inputName">
+                <label for="inputEmail">Email</label>
+                <input type="email" id="inputEmail">
+                <label for="inputMessage">Mensagem</label>
+                <textarea id="inputMessage" style="resize: none" cols="30" rows="10"></textarea>
+                <button type="button" class="btnEnviar" onclick="sendEmail()">Enviar</button>
+            </form>
+        </section>
+
+        <footer class="reveal">
+            <div class="footer-items">
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><strong>Telefone:</strong> (46) 91250121</p>
+                    <p><strong>Email:</strong> brai0506@hotmail.com</p>
+                </div>
+                <div class="footer-address">
+                    <h3>Endereço</h3>
+                    <p>R. Xingu, 999 - Amadori Pato Branco - PR</p>
+                    <p><strong>CEP:</strong> 85502-090</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Social</h3>
+                    <a href="https://www.facebook.com/people/Brai-Braidotti/100072016514203/" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/odontobrai/" target="_blank">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=55554691201020" target="_blank">
+                        <i class="fab fa-whatsapp-square"></i>
+                    </a>
+                </div>
+            </div>
+            <span></span>
+            <div class="footer-copy">
+                <p>&copy; Copyright 2022 - Todos os direitos reservados. Desenvolvido por <a href="https://www.instagram.com/focus.up_/" target="_blank" class="focus-effect">FocusUp</a></p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        var $doc = $("html, body");
+        $("a").click(function () {
+        $doc.animate(
+            {
+            scrollTop: $($.attr(this, "href")).offset().top,
+            },
+            500
+        );
+        return false;
+        });
+    </script>
+    
+    <!-- LOCAL JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
