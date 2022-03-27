@@ -3,6 +3,9 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const emailRoutes = require("./routes/email");
+const cors = require('cors')
+
+app.use(cors())
 
 app.use("/", express.json(), emailRoutes);
 
