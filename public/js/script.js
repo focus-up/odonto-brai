@@ -48,7 +48,7 @@ function sendEmail() {
     body: JSON.stringify(objEmail),
   };
 
-  fetch("/send", options).then((res) => {
+  fetch("https://odontobrai.herokuapp.com/send", options).then((res) => {
     res.text().then((msg) => {
       alert(msg);
     });
