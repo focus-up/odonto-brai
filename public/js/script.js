@@ -29,9 +29,9 @@ window.onscroll = () => {
 /* SEND EMAIL */
 
 function sendEmail() {
-  let name = select("inputName");
-  let email = select("inputEmail");
-  let message = select("inputMessage");
+  let name = select("inputName").value;
+  let email = select("inputEmail").value;
+  let message = select("inputMessage").value;
 
   if (!name || !email || !message) {
     alert("Preencha todos os campos!");
@@ -53,10 +53,12 @@ function sendEmail() {
       alert(msg);
     });
   });
+
+  limpaCampos(select("inputName"), select("inputEmail"), select("inputMessage"))
 }
 
 function select(id) {
-  let selected = document.querySelector(`#${id}`).value;
+  let selected = document.querySelector(`#${id}`);
 
   return selected;
 }
@@ -76,4 +78,10 @@ function validaEmail(valorEmail) {
       return false;
     }
   }
+}
+
+function limpaCampos(...campos) {
+  campos.forEach(campo => {
+    campo.value = ""
+  })
 }
